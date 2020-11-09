@@ -5,6 +5,7 @@
  */
 
 package areaofcircle;
+import java.util.Scanner;
 
 /**
  *
@@ -19,10 +20,11 @@ public class AreaOfCircle {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        double radius = 15;
-        double area = 0.0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter radius in cm");
+        double radius = sc.nextDouble();
         double pi = 3.14;
-        area = radius * radius * pi;
+        double area = radius * radius * pi;
         System.out.println("The area of the circle is: " + area + "cm ^2");
     }
     
